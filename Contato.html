@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinica veterinaria</title>
+    <link rel="stylesheet" href="base.css">
+    <style>
+        label {
+            width: 200px;
+            text-align: right;
+            display: inline-block;
+            padding-right: 5px;
+        }
+        fieldset {
+            margin: 10px;
+            border-radius: 15px;
+            border-color: rgb(121, 121, 122);
+        }
+    </style>
+</head>
+<style>
+</style>
+<body>
+    <div class="wrapper">
+        <div class="menu">
+            <!-- Aqui vai o seu menu -->
+            <ul>
+                <li><a href="Pagina Inicial.html">Pagina Inicial</a></li>
+                <li><a href="Sobre Nós.html">sobre nós</a></li>
+                <li><a href="Horario de Atendimento.html">Horarios de atendimento</a></li>
+                <li><a href="Contato.html">Contato</a></li>
+            </ul>
+            <iframe width="180" autoplay  src="https://www.youtube.com/embed/WZYNVRjDunk" title="Clínica Veterinária Karu Amigo - Vídeo Institucional Animado" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+
+        <div class="main">
+            <div class="header">  
+                 <div class="logo">
+                     <img src="Imagens/Banner-smartphone-760.png" width="1000" height="150" alt="" align="center"><br>
+                     
+                 </div>
+                 
+                
+                <!-- Aqui vai o seu header -->
+            </div>
+    
+            <div class="content">
+                    <form  onsubmit="alert('Cadastro criado com sucesso')" method="get">
+                    <h2>Informações da Clinica</h3>
+                            <fieldset>
+                                <legend>Clinica</legend>
+                                <iframe align="right" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29288.022267822595!2d-51.96739749569879!3d-23.424266614425783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ecd16ce2b30237%3A0xf473614185a1944b!2sPortal%20Pet%20Vet%20-%20Cl%C3%ADnica%20Veterin%C3%A1ria!5e0!3m2!1spt-BR!2sbr!4v1685554021826!5m2!1spt-BR!2sbr" width="150" height="100" style="border:0;" allowfullscreen="on" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            Nosso telefone para contato: 44-997115379<br>
+                            Nosso endereço: Av. São Paulo, 1522<br>
+                            Bairro: Zona 2<br>
+                            Cidade: Maringá - PR<br>
+                            Cep: 87010-355<br>
+                                   
+                            </fieldset>
+                    <h2>Formulario de Cadastro</h3><br>
+                            <fieldset>
+                                <legend>Informações do Usuario</legend>
+                                    <label>Nome :</label><input type="text" name="texto">
+                                    <label>Idade :</label><input type="number" name="Numero"><br>
+                                    <label>Nome do PET :</label><input type="text" name="texto">
+                                    <label>Idade do PET :</label><input type="number" name="Numero"><br>
+                            </fieldset> 
+                            <fieldset>
+                                <legend>Endereço</legend>
+                                    <label>Endereço :</label><input type="text" name="Endereço">
+                                    <label>Bairro :</label><input type="text" name="Bairro"><br>
+                                    <label>Numero da casa :</label><input type="number" name="Numero da casa">
+                                    <label>Cep :</label><input type="number" name="Cep"><br>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Informações para contato</legend>
+                                    <label>Numero para contato : 44-997115379</label><input type="text" name="texto">
+                                    <label>E-Mail:</label><input type="email" name="E-Mail"><br>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Qual o melhor horario para contato:</legend><br>
+                                    <checkbox>
+                                        <input type="radio" name="horarios" value="Manha">Periodo da Manha
+                                        <label align="right">Qual o seu PET</label>
+                                        <select name="pet" id="pet">
+                                            <option value="">Gato</option>
+                                            <option value="">Cachorro</option>
+                                            <option value="">Piriquito</option>
+                                            <option value="">Papagaio</option>
+                                            <option value="">Cobra</option>
+                                            <option value="">Porquinho da India</option>
+                                            <option  selected value="">Outros</option>
+                                        </select><br>
+                                        <input type="radio" name="horarios" value="tarde">Periodo da Tarde
+                                        <label>Qual o peso de seu PET</label>
+                                        <select name="peso" id="peso">
+                                            <option value="">0KG a 5KG</option>
+                                            <option value="">5KG a 10KG</option>
+                                            <option value="">10KG a 15KG</option>
+                                            <option value="">15KG a 20KG</option>
+                                            <option value="">20KG a 25KG</option>
+                                            <option  selected value="">Outros</option>
+                                        </select><br>
+                                        <input type="radio" name="horarios" value="Noite">Periodo da Noite<br>
+                                        <input type="radio" name="horarios" value="todos">Todos os periodos<br>
+                                    </checkbox>
+                                    
+                            </fieldset>
+                            <fieldset>
+                                <legend>Breve descrição do que esta acontecendo</legend>
+                                <textarea cols="120" rows="3"></textarea>
+                            </fieldset>
+                            <button name="Apagar" type="reset">Apagar</button>
+                            <button name="enviar" type="submit">Enviar Informações</button>
+                    </form>
+                        
+            </div>
+            
+    
+            <div class="footer">
+                <img src="Imagens/fotage contato.png" width="1000" height="150" alt="Mãos e patas dadas para o resto da vida ">
+
+                <!-- Aqui vai o seu rodapé -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
